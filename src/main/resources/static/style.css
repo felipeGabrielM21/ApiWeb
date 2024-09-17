@@ -1,0 +1,114 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #cfe4e0, #c5c7cf); /* Novo fundo gradiente */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Centralizando o título */
+h1 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Aumentei o tamanho da fonte */
+}
+
+/* Estilizando o formulário */
+form {
+    background-color: #fff;
+    padding: 40px; /* Aumentei o padding para mais espaçamento interno */
+    border-radius: 15px; /* Borda mais arredondada */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    width: 100%;
+    max-width: 400px; /* Dimensão máxima */
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Efeito mais pronunciado ao passar o mouse */
+}
+
+/* Estilo dos rótulos e inputs */
+label {
+    display: block;
+    margin-bottom: 8px; /* Ajustei o espaçamento */
+    color: #495057;
+    font-weight: bold; /* Tornei o texto mais destacado */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 14px; /* Aumentei o padding dos inputs */
+    margin-bottom: 20px; /* Aumentei o espaçamento inferior */
+    border: 1px solid #ced4da;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #495057;
+    background-color: #f1f3f5; /* Novo fundo mais claro nos inputs */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border-color: #7ba9e0; /* Cor diferente no foco */
+    background-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 14px; /* Aumentei o padding do botão */
+    background-color: #28a745; /* Cor verde mais agradável */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Cor verde mais escura no hover */
+    transform: translateY(-3px); /* Efeito de elevação */
+}
+
+button:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+/* Mensagem de resultado */
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    form {
+        padding: 25px;
+    }
+}
